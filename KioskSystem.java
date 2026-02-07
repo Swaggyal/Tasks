@@ -19,6 +19,10 @@ public class KioskSystem {
             System.out.println("3.Checkout");
             choice = sc.nextInt();
 
+            if(choice < 1 || choice > 3){
+                System.out.println("Invalid choice!");
+            return;
+            }
 
             switch(choice){
                 case 1:
